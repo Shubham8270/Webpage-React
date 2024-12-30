@@ -1,0 +1,171 @@
+/* src/admin/AdminHome.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px 20px;
+  background-color: transparent; /* Removed black background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-left {
+  font-size: 24px;
+  font-weight: bold;
+  left: 0;
+  padding-left: 100px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.header-box {
+  margin-right: 20px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-box {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  padding-right: 10px;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.admin-content {
+  margin-top: 70px; /* Offset for the fixed header */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.top-section {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* New Section for Clickable Rectangles */
+.clickable-rectangles {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.rectangle {
+  background-color: #e0c5a8; /* Light brown background */
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rectangle:hover {
+  background-color: #d1ab7d; /* Slightly darker shade on hover */
+}
+
+.bottom-section {
+  padding: 20px;
+}
+
+.featured-heading {
+  font-size: large;
+  padding-left: 110px;
+}
+
+.products {
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  height: 100px;
+  cursor: pointer;
+}
+
+.product-item img {
+  width: 50px;
+  height: auto;
+}
+
+.product-item span {
+  padding: 0 10px;
+  flex: 1;
+  text-align: left;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #ffebcd; /* Light brown */
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #f1d0a2;
+}
